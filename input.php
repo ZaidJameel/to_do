@@ -131,6 +131,7 @@ if (isset($_POST['up'])) {
 		table{
 			margin: auto;
 			border: 1px solid black;
+                        max-width: 100%;
 		}
 		
 		table th{
@@ -162,36 +163,6 @@ if (isset($_POST['up'])) {
  	<a href=""> <input type="submit" name="submit" value="OK"> </p></a>
  </form>
  	
-
-
- 	<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">L</button>
-<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-	<div class="modal-dialog modal-dialog-centered" role='document'>
-		<div class="modal-content">
-			<div class="modal-header">
-				<h5 class="modal-title" id="exampleModalLongTitle">
-					Update Task</h5>
-				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-					<span aria-hidden="true">&times;</span>		
-				</button>
-			</div>
-			<div class="modal-body">
-				<form method="POST">
-					<input type="text" name="t">
-			
-			</div>
-			<div class="modal-footer">
-				
-				<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-				<a href="?$task"><button type="submit" class="btn btn-primary" name="update">Save Changes</button></a></form>
-				
-			</div>
-		</div>
-	</div>
-</div>
-
-
-
 
 
 </body>
