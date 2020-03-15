@@ -69,7 +69,7 @@ echo "<tr>";
 	echo "</td>";
 }
 
-if (!empty($value1) ) {
+if (!empty($value1) && $key !== "g" ) {
 	echo "<td>";
 	echo "<form method='POST'>";
 		echo   "<a href='?$key'> <button type='submit'name='Update' value='$key' style='background-color:blue;margin-top:12px;border-radius:6px'>Update</button></a>";
@@ -147,6 +147,10 @@ if (isset($_POST['up'])) {
 		h6{
 			text-align: right;
 			margin-right: 200px;
+		}
+		.modal-content{
+			width: 40% !important;
+			
 		}
 		
 	</style>
