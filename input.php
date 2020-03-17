@@ -69,7 +69,7 @@ echo "<tr>";
 	echo "</td>";
 }
 
-if (!empty($value1) && $key !== "g" ) {
+if (!empty($value1) && $key !== "g") {
 	echo "<td>";
 	echo "<form method='POST'>";
 		echo   "<a href='?$key'> <button type='submit'name='Update' value='$key' style='background-color:blue;margin-top:12px;border-radius:6px'>Update</button></a>";
@@ -106,7 +106,6 @@ if (isset($_POST['Update'])) {
 if (isset($_POST['up'])) {
 		$_SESSION [$_SESSION["g"]]['t']=$_POST['t'];
 		echo "<h6>Refresh page to Update</h6>";
-		unset($_SESSION["g"]);
 	}
 
 ?>
